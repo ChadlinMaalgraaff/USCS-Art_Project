@@ -27,6 +27,7 @@ class Home extends Component {
                 <div className='section section-2'>
                     <br/><br/><br/>
                     <p className='section-heading text-center'>BROWSE</p>
+                    <br/>
                     <Container>
                         <Row>
                             <Col
@@ -121,6 +122,23 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
+                    <br/><br/><br/>
+                </div>
+                <div className='section section-1'>
+                    <br/><br/><br/><br/><br/><br/><br/><br/>
+                    <p className='section-heading text-center'>COMMISSION YOUR FAVOURITE ARTISTS</p>
+                    <p className='text-center section-text'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br/>irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br/>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br/>deserunt mollit anim id est laborum.
+                    </p>
+                    <br/><br/>
+                </div>
+                <div className='section section-1' style={{backgroundColor:'white'}}>
+                    <br/><br/><br/><br/><br/><br/><br/><br/>
+                    <p className='section-heading text-center'>BECOME A CONTRIBUTER!</p>
+                    <p className='text-center section-text'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br/>irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br/>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br/>deserunt mollit anim id est laborum.
+                    </p>
+                    <br/><br/>
                 </div>
             </div>
         );
