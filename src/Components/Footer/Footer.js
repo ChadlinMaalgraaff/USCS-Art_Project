@@ -4,7 +4,16 @@ class Footer extends Component {
 
     render() {
         return (
-            <h1>Footer</h1>
+            <div>
+                <div 
+                style={{minHeight:'200px', backgroundColor:'#EBEBEB'}}
+                >
+                </div>
+                <div 
+                style={{minHeight:'20px', backgroundColor:'black'}}
+                >
+                </div>
+            </div>
         );
     }
 }
