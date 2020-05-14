@@ -1,0 +1,42 @@
+.Navbar {
+    Height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    margin-top: 20px;
+}
+
+.centered {
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.input-field {
+    border-width: 0px;
+    border-color: white;
+    outline: none;
+}
+
+.input-field:focus {
+    border-width: 0px;
+    border-color: white;
+    outline: none;
+}
+
+.input-field:active {
+    border-width: 0px;
+    border-color: white;
+    outline: none;
+}
+
+.input-field:hover {
+    border-width: 0px;
+    border-color: white;
+    outline: none;
+}
