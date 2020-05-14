@@ -2,6 +2,8 @@
     Height: 100px;
     background-color: black;
     color: white;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav-link {

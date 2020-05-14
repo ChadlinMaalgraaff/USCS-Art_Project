@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Container, Row, Col, Navbar, Image, Nav} from 'react-bootstrap';
+import { Container, Navbar, Image, Nav} from 'react-bootstrap';
 import './Navbar.css';
 import Searchbar from './Searchbar';
 import Basket from '../Images/basket.png';
@@ -51,7 +51,7 @@ class NavBar extends Component {
                             <Nav.Item style={{margin:'auto'}}>
                                 <NavLink to='/'>
                                     <p>
-                                        <Image src={Basket} style={{width:'35px', height:'30px', marginTop:'10px'}}/>
+                                        <Image src={Basket} style={{width:'35px', height:'30px', marginTop:'15px'}}/>
                                     </p>
                                 </NavLink>
                             </Nav.Item>
