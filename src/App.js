@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         {/*<Navbar />
         <Home />
         <Footer />*/}
-        <Login />
+        <Register />
       </BrowserRouter>
     </div>
   );
