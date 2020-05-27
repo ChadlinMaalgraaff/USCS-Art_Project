@@ -14,6 +14,7 @@ class Login extends Component {
                         md={6}
                         lg={6}
                         xl={6}
+                        className='rightLine'
                     >
                         <div className='backdrop text-center'>
                             <br/>
@@ -26,40 +27,43 @@ class Login extends Component {
                         md={6}
                         lg={6}
                         xl={6}
+                        style={{position:'relative'}}
                     >
-                        <Form.Group controlId="validationFormik04" className="password" >
-                            <Form.Label className='form-text label'>E-mail or username</Form.Label>
-                            <Form.Control
-                                required
-                                type="text" 
-                                name="emailUsername"
-                                isInvalid={false}
-                                isValid ={false} 
-                                className='form-input'
-                            />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter an email or username
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                        <div className='vertCenter'>
+                            <Form.Group controlId="validationFormik04" className="password" >
+                                <Form.Label className='form-text label'>E-mail or username</Form.Label>
+                                <Form.Control
+                                    required
+                                    type="text" 
+                                    name="emailUsername"
+                                    isInvalid={false}
+                                    isValid ={false} 
+                                    className='form-input'
+                                />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter an email or username
+                                </Form.Control.Feedback>
+                            </Form.Group>
 
-                        <Form.Group controlId="validationFormik04" className="password" >
-                            <Form.Label className='form-text label'>Password</Form.Label>
-                            <Form.Control
-                                required
-                                type="password" 
-                                name="password"
-                                isInvalid={false}
-                                isValid ={false} 
-                                className='form-input'
-                            />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your password
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <br/>
-                        <Button className='submitButton form-text'>
-                            LOGIN
-                        </Button>
+                            <Form.Group controlId="validationFormik04" className="password" >
+                                <Form.Label className='form-text label'>Password</Form.Label>
+                                <Form.Control
+                                    required
+                                    type="password" 
+                                    name="password"
+                                    isInvalid={false}
+                                    isValid ={false} 
+                                    className='form-input'
+                                />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your password
+                                </Form.Control.Feedback>
+                            </Form.Group>
+                            <br/>
+                            <Button className='submitButton form-text'>
+                                LOGIN
+                            </Button>
+                        </div>
                     </Col>
                 </Row>
             </Container>
