@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Modal } from 'react-bootstrap';
 import './login.css';
+import Register from '../Register/Register';
 
 class Login extends Component {
+    state = {
+        show: false
+    }
 
     render() {
+        const handleClose = () => {this.setState({show:false}); this.props.close()};
+        const handleShow = () => {this.setState({show:true})};
+
         return (
             <Container>
                 <Row>
@@ -18,7 +25,7 @@ class Login extends Component {
                     >
                         <div className='backdrop text-center'>
                             <br/>
-                            <span className='backdrop-label'>CREATE ACCOUNT</span>
+                            <span className='backdrop-label' onClick={handleShow}>CREATE ACCOUNT</span>
                         </div>
                     </Col>
                     <Col
@@ -66,6 +73,11 @@ class Login extends Component {
                         </div>
                     </Col>
                 </Row>
+                <Modal show={this.state.show} size='lg' onHide={handleClose} centered>
+                    <Modal.Body style={{backgroundColor:'#ffffff'}}>
+                        <Register />
+                    </Modal.Body>
+                </Modal>
             </Container>
         );
     }

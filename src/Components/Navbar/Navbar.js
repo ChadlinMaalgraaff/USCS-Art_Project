@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Container, Navbar, Image, Nav} from 'react-bootstrap';
+import { Container, Navbar, Image, Nav, Modal} from 'react-bootstrap';
 import './Navbar.css';
 import Searchbar from './Searchbar';
 import Basket from '../Images/basket.png';
 import Rectangle from '../Images/Rectangle.png';
+import Login from '../Login/Login';
 
 class NavBar extends Component {
+    state = {
+        show: false
+    }
 
     render() {
+        const handleClose = () => {this.setState({show:false})};
+        const handleShow = () => {this.setState({show:true})};
         return (
             <Navbar expand="lg" className='Navbar' style={{width:'100%'}}>
                 <Container>
@@ -42,7 +48,7 @@ class NavBar extends Component {
                                 </NavLink>
                             </Nav.Item>
                             <Nav.Item style={{margin:'auto'}}>
-                                <NavLink to='/'>
+                                <NavLink to='/' onClick={handleShow}>
                                     <p className='text-white nav-link'>
                                         LOGIN
                                     </p>
@@ -57,6 +63,12 @@ class NavBar extends Component {
                             </Nav.Item>
                     </Navbar.Collapse>
                 </Container>
+
+                <Modal show={this.state.show} size='lg' onHide={handleClose} centered>
+                    <Modal.Body style={{backgroundColor:'#ffffff'}}>
+                        <Login close={handleClose}/>
+                    </Modal.Body>
+                </Modal>
             </Navbar>
         );
     }
