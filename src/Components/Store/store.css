@@ -140,7 +140,7 @@ html {
     }
   
   /* Hide the browser's default checkbox */
-  .container input {
+  .checkbox {
     position: absolute;
     opacity: 0;
     cursor: pointer;

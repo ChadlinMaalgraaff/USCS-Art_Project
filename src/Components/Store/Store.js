@@ -29,38 +29,6 @@ class Store extends Component {
             }
         }
 
-        function DropDown(el) {
-            this.dd = el;
-            this.placeholder = this.dd.children('span');
-            this.opts = this.dd.find('ul.dropdown > li');
-            this.val = '';
-            this.index = -1;
-            this.initEvents();
-        }
-        DropDown.prototype = {
-            initEvents : function() {
-                var obj = this;
-        
-                obj.dd.on('click', function(event){
-                    $(this).toggleClass('active');
-                    return false;
-                });
-        
-                obj.opts.on('click',function(){
-                    var opt = $(this);
-                    obj.val = opt.text();
-                    obj.index = opt.index();
-                    obj.placeholder.text(obj.val);
-                });
-            },
-            getValue : function() {
-                return this.val;
-            },
-            getIndex : function() {
-                return this.index;
-            }
-        }
-
         return (
             <Container fluid style={{paddingTop:'150px'}}>
                 <Row style={{padding:'0px', margin:'0px', width:'100%', paddingBottom:'50px'}}>
@@ -216,7 +184,7 @@ class Store extends Component {
                                             <Col xs={11} sm={11} md={11} lg={9} xl={9}>
                                             <div id="slider-range" className='slider-range'></div>
                                             <p>
-                                                <input type="text" id="amount" readonly/>
+                                                <input type="text" id="amount" readonly disabled/>
                                             </p>
                                             </Col>
                                         </Row>

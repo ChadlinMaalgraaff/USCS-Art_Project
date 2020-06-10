@@ -16,8 +16,8 @@ class Login extends Component {
             <Container>
                 <Row>
                     <Col
-                        xs={6}
-                        sm={6}
+                        xs={7}
+                        sm={7}
                         md={6}
                         lg={6}
                         xl={6}
@@ -25,12 +25,12 @@ class Login extends Component {
                     >
                         <div className='backdrop text-center'>
                             <br/>
-                            <span className='backdrop-label' onClick={handleShow}>CREATE ACCOUNT</span>
+                            <a className='backdrop-label' onClick={handleShow}>CREATE ACCOUNT</a>
                         </div>
                     </Col>
                     <Col
-                        xs={6}
-                        sm={6}
+                        xs={5}
+                        sm={5}
                         md={6}
                         lg={6}
                         xl={6}
@@ -75,7 +75,7 @@ class Login extends Component {
                 </Row>
                 <Modal show={this.state.show} size='lg' onHide={handleClose} centered>
                     <Modal.Body style={{backgroundColor:'#ffffff'}}>
-                        <Register />
+                        <Register loginShow={handleShow}/>
                     </Modal.Body>
                 </Modal>
             </Container>

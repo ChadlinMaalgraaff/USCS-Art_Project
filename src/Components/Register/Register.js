@@ -5,12 +5,13 @@ import '../Login/login.css';
 class Register extends Component {
 
     render() {
+
         return (
         <Container>
             <Row>
                 <Col
-                    xs={6}
-                    sm={6}
+                    xs={7}
+                    sm={7}
                     md={6}
                     lg={6}
                     xl={6}
@@ -22,8 +23,8 @@ class Register extends Component {
                     </div>
                 </Col>
                 <Col
-                    xs={6}
-                    sm={6}
+                    xs={5}
+                    sm={5}
                     md={6}
                     lg={6}
                     xl={6}

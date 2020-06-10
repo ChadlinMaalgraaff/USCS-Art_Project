@@ -41,7 +41,7 @@ class NavBar extends Component {
                                 </NavLink>
                             </Nav.Item>
                             <Nav.Item style={{margin:'auto'}}>
-                                <NavLink to='/'>
+                                <NavLink to='/store'>
                                     <p className='text-white nav-link'>
                                         STORE
                                     </p>
