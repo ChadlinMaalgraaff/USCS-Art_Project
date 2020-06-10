@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/*<Navbar />
-        <Home />
-        <Footer />*/}
+        <Navbar />
+        {/*<Home />
         {/*<Register />*/}
         <Store />
+        <Footer/>
       </BrowserRouter>
     </div>
   );

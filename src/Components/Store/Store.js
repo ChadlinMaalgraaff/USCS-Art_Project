@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Container, Row, Col, Form, Dropdown, DropdownButton } from 'react-bootstrap';
 import './store.css';
+import $ from 'jquery';
 
 class Store extends Component {
+
+    
 
     render() {
         let menuOpen = false;
@@ -26,9 +29,41 @@ class Store extends Component {
             }
         }
 
+        function DropDown(el) {
+            this.dd = el;
+            this.placeholder = this.dd.children('span');
+            this.opts = this.dd.find('ul.dropdown > li');
+            this.val = '';
+            this.index = -1;
+            this.initEvents();
+        }
+        DropDown.prototype = {
+            initEvents : function() {
+                var obj = this;
+        
+                obj.dd.on('click', function(event){
+                    $(this).toggleClass('active');
+                    return false;
+                });
+        
+                obj.opts.on('click',function(){
+                    var opt = $(this);
+                    obj.val = opt.text();
+                    obj.index = opt.index();
+                    obj.placeholder.text(obj.val);
+                });
+            },
+            getValue : function() {
+                return this.val;
+            },
+            getIndex : function() {
+                return this.index;
+            }
+        }
+
         return (
-            <Container fluid style={{padding:'0px', margin:'0px', width:'100%'}}>
-                <Row style={{padding:'0px', margin:'0px', width:'100%'}}>
+            <Container fluid style={{paddingTop:'150px'}}>
+                <Row style={{padding:'0px', margin:'0px', width:'100%', paddingBottom:'50px'}}>
                     <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{padding:'0px', margin:'0px'}} >
                         <Row>
                             <Col xs={0} sm={0} md={1} lg={1} xl={1}></Col>
@@ -406,6 +441,21 @@ class Store extends Component {
                                         </Row>
                                     </Col>
                                 </Row>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col xs={12} sm={12} md={12} lg={8} xl={8} style={{padding:'0px', margin:'0px', minHeight:'100vh'}}>
+                        <Row>
+                            <Col xs={7} sm={7} md={8} lg={8} xl={8}></Col>
+                            <Col xs={5} sm={5} md={4} lg={4} xl={4}>
+                                <div id="dd" class="wrapper-dropdown-3" tabindex="1" style={{}}>
+                                    <span>Most Popular</span>
+                                    <ul class="dropdown">
+                                        <li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
+                                        <li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
+                                        <li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+                                    </ul>
+                                </div>
                             </Col>
                         </Row>
                     </Col>
