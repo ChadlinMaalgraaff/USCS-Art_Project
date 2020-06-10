@@ -1,4 +1,7 @@
-
+html {
+    margin: 0px;
+    padding: 0px;
+}
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,7 +11,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .toggle {
+    .toggle {
       position: ralative;
       height: 100%;
       background: #CBE7FF;
@@ -19,10 +22,8 @@
     .toggle-content {
       width: 100%;
       height: 100%;
-      /*min-height: 100vh;*/
       color: white;
       background-color: white;
-      
     }
     
     @media screen and (max-width: 768px) {
@@ -93,15 +94,16 @@
       .toggle-content {
         position: fixed;
         background: #CBE7FF;
-        height: 100vh;
         width: 100%;
         flex-direction: column;
         clip-path: circle(100px at 90% -100%);
         -webkit-clip-path: circle(100px at 90% -100%);
         transition: all 1s ease-out;
         pointer-events: none;
+        height: 100vh;
+        overflow-y: scroll;
       }
-  
+
       .toggle-content.open {
         clip-path: circle(1000px at 90% );
         -webkit-clip-path: circle(1000px at 90%);
@@ -193,3 +195,155 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  .check-heading {
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+    #slider-range .ui-slider-range { 
+        background: #CBE7FF; 
+    }
+    #slider-range .ui-slider-handle {
+        border-color: #CBE7FF;
+        border-width: 3px;
+        border-style: solid; 
+        border-radius: 100%;
+        background-color: #F1F8FE;
+    }
+
+    #slider-range .ui-slider-handle:focus {
+        border-color: #CBE7FF;
+        border-width: 3px;
+        border-style: solid; 
+        border-radius: 100%;
+        background-color: #F1F8FE;
+        outline: none;
+    }
+
+    #amount {
+        color: black;
+        border: 0;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+    fieldset, label { margin: 0; padding: 0; }
+    h1 { font-size: 1.5em; margin: 10px; }
+
+    /****** Style Star Rating Widget *****/
+
+    .rating { 
+    border: none;
+    float: left;
+    }
+
+    .rating > input { display: none; } 
+    .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+    }
+
+    .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+    }
+
+    .rating > label { 
+        color: #ddd; 
+        float: right;
+        font-size: 30px; 
+    }
+
+    /***** CSS Magic to Highlight Stars on Hover *****/
+
+    .rating > input:checked ~ label, /* show gold star when clicked */
+    .rating:not(:checked) > label:hover, /* hover current star */
+    .rating:not(:checked) > label:hover ~ label { color: #CBE7FF;  } /* hover previous stars in list */
+
+    .rating > input:checked + label:hover, /* hover current star when changing rating */
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+    .rating > input:checked ~ label:hover ~ label { color:#9DD2FF;  } 
+
+    .location {
+        border-color: #CBE7FF;
+        border-style: solid;
+        border-width: 2px;
+        color: black;
+        margin-left: 30px;
+        border-radius: 7px;
+        height: 25px;
+        display: inline-block;
+        outline: none;
+        text-align: center;
+    }
+
+    .location:focus {
+        border-color: #CBE7FF;
+        border-style: solid;
+        border-width: 2px;
+        color: black;
+        margin-left: 30px;
+        border-radius: 7px;
+        height: 25px;
+        display: inline-block;
+        outline: none;
+    }
+
+    .location::placeholder {
+        color: #CBE7FF;
+    }
+
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      border: 3px solid transparent;
+      background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      width: 5px;
+      border-radius: 5px;
+    }
+
+    .search-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .result-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      display: inline-block;
+      color: #CBE7FF;
+    }
+    @media screen and (max-width: 768px) {
+      .search-text {
+        font-size: 40px;
+      }
+  
+      .result-text {
+        font-size: 10px;
+      }
+    }
