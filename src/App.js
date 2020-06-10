@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import Store from './Components/Store/Store';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         {/*<Navbar />
         <Home />
         <Footer />*/}
-        <Register />
+        {/*<Register />*/}
+        <Store />
       </BrowserRouter>
     </div>
   );
