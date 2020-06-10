@@ -207,8 +207,9 @@ html {
   }
 
     #slider-range .ui-slider-range { 
-        background: #CBE7FF; 
+        background: #CBE7FF;
     }
+    
     #slider-range .ui-slider-handle {
         border-color: #CBE7FF;
         border-width: 3px;

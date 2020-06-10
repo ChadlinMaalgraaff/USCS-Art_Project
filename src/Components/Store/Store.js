@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Form, Dropdown, DropdownButton } from 'react-bootstrap';
 import './store.css';
 import $ from 'jquery';
+import './storejs';
 
 class Store extends Component {
+    state = {
+        test: false
+    }
 
-    
+    componentDidMount() {
+        this.setState({
+            test: true
+        })
+    }
 
     render() {
         let menuOpen = false;

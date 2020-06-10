@@ -34,7 +34,7 @@ class NavBar extends Component {
                                 </p>
                             </Nav.Item>
                             <Nav.Item style={{margin:'auto'}}>
-                                <NavLink to='/'>
+                                <NavLink to='/artist'>
                                     <p className='text-white nav-link'>
                                         ARTISTS
                                     </p>
