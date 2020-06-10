@@ -30,7 +30,7 @@ class ArtistProfile extends Component {
         }
 
         return (
-            <Container fluid style={{paddingTop:'150px'}}>
+            <Container fluid style={{ paddingTop:'150px'}}>
                 <Row style={{padding:'0px', margin:'0px', width:'100%', paddingBottom:'50px'}}>
                     <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{padding:'0px', margin:'0px'}} >
                         <Row style={{paddingBottom:'100px'}}>
