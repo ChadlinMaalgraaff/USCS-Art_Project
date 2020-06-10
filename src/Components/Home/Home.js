@@ -15,7 +15,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <div id='top-section'>
                 <div className='section section-1'>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                     <p className='section-heading text-center'>THE ART PROJECT</p>
