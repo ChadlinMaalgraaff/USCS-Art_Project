@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { Button, FormControl, InputGroup } from 'react-bootstrap';
 
 class Searchbar extends Component {
 
     render() {
         return (
-            <div style={{backgroundColor:'white', borderRadius:'1rem', marginTop:'3px', height:'30px'}}>
-                <input className="input-field" type="text" placeholder="" name="usrnm" style={{width:'320px'}}/>
-                <i className="fa fa-search icon" style={{color:'black', width:'30px', marginLeft:'320px'}}></i>
-            </div>
+            <InputGroup className="mb-3" style={{marginTop:'20px'}}>
+                <FormControl type="text" placeholder="Search by name or text" className="search text-center" id='searchInput' style={{borderTopLeftRadius:'1.5rem', borderBottomLeftRadius:'1.5rem'}}/>
+                <InputGroup.Append>
+                <Button className='search-button' style={{width:'100%', borderTopRightRadius:'1.5rem', borderBottomRightRadius:'1.5rem', backgroundColor:'white', borderColor:'white'}}>
+                <i className="fa fa-search icon" style={{color:'black', width:'30px'}}></i>
+                </Button>
+                </InputGroup.Append>
+            </InputGroup>
         );
     }
 }
