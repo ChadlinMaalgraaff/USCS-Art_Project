@@ -159,7 +159,7 @@
   
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #CBE7FF;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -176,10 +176,10 @@
   
   /* Style the checkmark/indicator */
   .container .checkmark:after {
-    left: 8px;
-    top: 3px;
-    width: 5px;
-    height: 10px;
+    left: 7px;
+    top: 0px;
+    width: 6px;
+    height: 15px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);

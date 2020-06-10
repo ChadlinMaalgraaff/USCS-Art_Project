@@ -42,7 +42,8 @@ class Store extends Component {
                                             <input type="checkbox"className='checkbox'/>
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="container"><p>One</p>
+                                        <label class="container">
+                                            <p>One</p>
                                             <input type="checkbox"/>
                                             <span class="checkmark"></span>
                                         </label>
