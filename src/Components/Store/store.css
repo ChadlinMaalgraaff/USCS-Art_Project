@@ -11,7 +11,7 @@
   .toggle {
       position: ralative;
       height: 100%;
-      background: blue;
+      background: #CBE7FF;
       width: 100%;
       transition: all .5s ease-in-out;
     }
@@ -21,7 +21,7 @@
       height: 100%;
       /*min-height: 100vh;*/
       color: white;
-      background-color: blue;
+      background-color: white;
       
     }
     
@@ -67,9 +67,13 @@
       }
       .menu-btn__burger::before {
         transform: translateY(-8px);
+        background: #fff;
+        transition: all .5s ease-in-out;
       }
       .menu-btn__burger::after {
         transform: translateY(8px);
+        background: #fff;
+        transition: all .5s ease-in-out;
       }
       /* ANIMATION */
       .menu-btn.open .menu-btn__burger {
@@ -79,14 +83,16 @@
       }
       .menu-btn.open .menu-btn__burger::before {
         transform: rotate(45deg) translate(35px, -35px);
+        background-color: black;
       }
       .menu-btn.open .menu-btn__burger::after {
         transform: rotate(-45deg) translate(35px, 35px);
+        background-color: black;
       }
     
       .toggle-content {
         position: fixed;
-        background: blue;
+        background: #CBE7FF;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -100,6 +106,7 @@
         clip-path: circle(1000px at 90% );
         -webkit-clip-path: circle(1000px at 90%);
         pointer-events: all;
+        background-color: white;
       }
   
       .content-item {
